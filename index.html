@@ -4,6 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,th,td{
+            border:10px solid black;
+            border-radius: 10px;
+            border-style: dashed;
+            text-align: center;
+            padding: 10px; 
+        }
+         td{
+            background-color:rgba(rgb(136, 255, 0), rgb(59, 63, 59), rgb(15, 15, 92), alpha);
+         }
+    
+        td:nth-child(even){
+            background-color:rgb(49, 67, 230);
+        }
+        th:nth-child(odd){
+            background-color: cadetblue;
+        }
+
+        td:hover{
+            background-color: blueviolet;
+        }
+
+        th:hover{
+            background-color: aquamarine;
+        }
+        
+    </style>
 </head>
 <body>
     <h1>Hello</h1>
@@ -12,5 +40,32 @@
     <h4>ABES</h4>
     <h5>Engineering</h5>
     <h6>College</h6>
+
+
+    <table style="width: 50%">
+        <caption>Student details</caption>
+        <colgroup>
+            <col span="1" style="background-color: aliceblue;">
+        <tr>
+            
+            <th Name colspan = "2">Name</th>
+            <th>Rollno</th>
+        </tr>
+                </colgroup>
+        <tr>
+            <td>1</td>
+            <td>Bhanu</td>
+            <td>361</td>
+        </tr>
+
+        <li>
+            <ol>
+                <li>CHITRANSH</li>
+            </ol>
+            
+                <li>BHANUPAD</li>
+        </li>
+
+    </table>
 </body>
 </html>
